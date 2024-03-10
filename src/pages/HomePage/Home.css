@@ -1,0 +1,187 @@
+.section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.section-title {
+  font-weight: 500;
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.section-text {
+  font-weight: 500;
+  font-size: 1.125em;
+  text-align: center;
+  color: #5e6e89;
+  margin-bottom: 30px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Hero section */
+.Hero-section {
+  width: 100%;
+  background-image: url("/src/assets/bg-image.png");
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Hero-section article {
+  background-color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+  padding: 40px;
+}
+
+.Hero-section article p:last-of-type {
+  font-size: 1.125em;
+}
+
+.Hero-section article h1,
+.Hero-section article p:first-of-type {
+  font-size: 2.5em;
+}
+
+.Hero-section button {
+  margin-top: 50px;
+  padding-right: 40px;
+  padding-left: 40px;
+  font-size: 22px;
+}
+/* Hero section */
+
+/* Products section */
+.products-contianer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+/* Products section */
+
+/* Befits Section */
+.Benefits-section {
+  background-color: var(--img-bg);
+}
+
+.Benefits-section .section-title,
+.Benefits-section .section-text {
+  text-align: left;
+  line-height: 1;
+}
+
+.Benefits-body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Benefits-body ul {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.Benefits-body ul li div {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  font-size: 1.125em;
+}
+
+.Benefits-body ul li div p span {
+  font-weight: 500;
+}
+
+.Benefits-body button {
+  margin-top: 50px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.Benefits-mockup {
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+  width: fit-content;
+}
+
+.Benefits-mockup img {
+  width: 100%;
+}
+/* Befits Section */
+
+/* Testimonials Section */
+.testimonials-section {
+  background-color: #56b27f10;
+}
+
+.testimonials-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonials-container .review {
+  background-color: white;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+  padding: 10px;
+  min-height: 225px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  cursor: pointer;
+  user-select: none;
+  transition: var(--transition);
+}
+
+.testimonials-container .review:hover {
+  transform: scale(1.1);
+}
+
+.testimonials-container .review p {
+  text-align: center;
+  font-size: 1.375em;
+}
+
+.testimonials-container .review span {
+  font-size: 1.125em;
+  color: #7c8087;
+}
+
+.testimonials-container .pfp img {
+  width: 100%;
+}
+/* Testimonials Section */
+
+@media (max-width: 767px) {
+  .Hero-section {
+    background-image: url("/src/assets//mobile-bg-image.png");
+  }
+  .Hero-section article p:last-of-type br {
+    display: none;
+  }
+}
+
+@media (max-width: 1199px) {
+  .Benefits-section .section-title,
+  .Benefits-section .section-text {
+    text-align: center;
+  }
+  .Benefits-body {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .Benefits-body button {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

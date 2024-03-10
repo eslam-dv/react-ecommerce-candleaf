@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/* Start of golbal values */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  --primary: #56b280;
+  --black: #272727;
+  --transition: 300ms;
+  --img-bg: #f7f8fa;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--black);
+  z-index: 1;
+}
+
+ul {
+  list-style: none;
+}
+
+svg {
+  font-size: 1.5em;
+}
+
+.roboto {
+  font-family: "Roboto", sans-serif;
+}
+
+.poppins {
+  font-family: "Poppins", sans-serif;
+}
+
+.md {
+  font-weight: 500;
+}
+
+.primary {
+  color: var(--primary);
+}
+
+.btn {
+  background-color: var(--primary);
+  color: white;
+  border: 1px solid transparent;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: var(--transition);
+}
+
+.btn:hover {
+  background-color: transparent;
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (max-width: 575px) {
+  .container {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+/* End of golbal values */
+.quantity-handler {
+  display: flex;
+  border: 1px solid var(--primary);
+  align-items: center;
+  width: 75px;
+  margin: 0 auto;
+}
+
+.quantity-handler > input {
+  width: 30px;
+  text-align: center;
+  border: none;
+  outline: none;
+  font-size: 18px;
+}
+
+.quantity-handler > button {
+  flex-basis: 100%;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: var(--primary);
+  font-size: 18px;
+}

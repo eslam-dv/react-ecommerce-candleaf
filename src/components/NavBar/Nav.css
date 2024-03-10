@@ -1,0 +1,139 @@
+header {
+  background-color: white;
+  position: sticky;
+  top: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  z-index: 2;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  flex-basis: 33.3%;
+}
+
+.nav-links {
+  flex-basis: 33.3%;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.nav-links button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.nav-links button:hover {
+  color: var(--primary);
+}
+
+a {
+  color: var(--black);
+  text-decoration: none;
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+a:hover {
+  color: var(--primary);
+}
+
+.nav-user {
+  flex-basis: 33.3%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10%;
+}
+
+.menu {
+  display: none;
+  flex-basis: 33%;
+  cursor: pointer;
+}
+
+.dropdown {
+  display: none;
+  flex-direction: column;
+  padding-top: 10px;
+  gap: 10px;
+  font-weight: 400;
+  background-color: white;
+}
+.dropdown.active {
+  display: flex;
+}
+
+.cart-icon {
+  position: relative;
+}
+
+.cart-icon div {
+  position: absolute;
+  top: -4px;
+  right: -7px;
+  width: 15px;
+  height: 15px;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.6em;
+  background-color: var(--primary);
+  color: white;
+  border-radius: 50%;
+  display: none;
+}
+
+.cart-icon div.active {
+  display: flex;
+}
+
+@media (max-width: 767px) {
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    width: 100%;
+    background-color: white;
+    left: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transform: translateX(-200%);
+    z-index: 1;
+    transition: var(--transition);
+  }
+  .nav-links.open {
+    transform: translateX(0);
+  }
+  .nav-logo {
+    text-align: center;
+  }
+  .menu {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  .dropdown {
+    top: 100%;
+    border-radius: 2px;
+    padding-bottom: 10px;
+    width: 100px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+  .dropdown.active {
+    position: absolute;
+  }
+}
