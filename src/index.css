@@ -51,10 +51,13 @@ svg {
   border: 1px solid transparent;
   padding-top: 6px;
   padding-bottom: 6px;
+  padding-left: 40px;
+  padding-right: 40px;
   font-size: 20px;
   cursor: pointer;
   border-radius: 4px;
   transition: var(--transition);
+  text-align: center;
 }
 
 .btn:hover {

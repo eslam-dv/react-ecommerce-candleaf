@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Product } from "../../components/Product/Product";
 import { CircleCheckIcon } from "../../components/icons";
 import products from "../../db/products";
@@ -5,6 +6,11 @@ import reviews from "../../db/reviews.json";
 import "./Home.css";
 
 export const HomePage = () => {
+  const [width, setWidth] = useState(window.innerWidth);
+  const [seeMore, setSeeMore] = useState(false);
+
+  window.addEventListener("resize", () => setWidth(window.innerWidth));
+
   return (
     <>
       {/* Hero Section */}
@@ -22,16 +28,29 @@ export const HomePage = () => {
       {/* Hero Section */}
 
       {/* Product Sectoin */}
-      <section className="section container">
+      <section className="section container product-section">
         <h1 className="section-title">Products</h1>
         <p className="section-text">
           Order it for you or for your beloved ones
         </p>
         <div className="products-contianer">
-          {products.map((product) => (
-            <Product key={product.id} product={product} />
-          ))}
+          {width < 540 && seeMore
+            ? products.map((product) => (
+                <Product key={product.id} product={product} />
+              ))
+            : width < 540
+            ? products
+                .slice(0, 4)
+                .map((product) => (
+                  <Product key={product.id} product={product} />
+                ))
+            : products.map((product) => (
+                <Product key={product.id} product={product} />
+              ))}
         </div>
+        <button className="btn" onClick={() => setSeeMore(!seeMore)}>
+          {seeMore ? "Hide" : "See More"}
+        </button>
       </section>
       {/* Product Sectoin */}
 

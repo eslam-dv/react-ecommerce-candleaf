@@ -32,3 +32,17 @@
   color: var(--primary);
   text-align: end;
 }
+
+@media (max-width: 539px) {
+  .card-img {
+    height: 100px;
+    overflow: hidden;
+  }
+  .card-info {
+    padding: 5px 10px;
+  }
+  .card-title {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+}

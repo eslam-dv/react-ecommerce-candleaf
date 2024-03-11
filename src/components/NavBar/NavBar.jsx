@@ -3,7 +3,14 @@ import { useContext } from "react";
 
 import "./Nav.css";
 import { useState } from "react";
-import { CartIcon, UserIcon, BurgerMenuIcon, CloseIcon } from "../icons";
+import {
+  CartIcon,
+  UserIcon,
+  BurgerMenuIcon,
+  CloseIcon,
+  AngleUpIcon,
+  AngleDownIcon,
+} from "../icons";
 import { CartContext } from "../../context/CartContext";
 
 const NavBar = () => {
@@ -24,7 +31,7 @@ const NavBar = () => {
         <ul className={`nav-links ${open ? "open" : ""}`}>
           <li>
             <button className="roboto" onClick={() => setDropown(!dropdown)}>
-              Discovery +
+              Discovery {dropdown ? <AngleUpIcon /> : <AngleDownIcon />}
             </button>
             <ul className={`dropdown ${dropdown ? "active" : ""}`}>
               <li>
