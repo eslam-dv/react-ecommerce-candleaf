@@ -12,6 +12,7 @@ import {
   AngleDownIcon,
 } from "../icons";
 import { CartContext } from "../../context/CartContext";
+import Logo from "../../assets/logo.png";
 
 const NavBar = () => {
   const [open, setOpen] = useState(false);
@@ -26,7 +27,7 @@ const NavBar = () => {
           {open ? <CloseIcon /> : <BurgerMenuIcon />}
         </div>
         <Link to="/" className="nav-logo">
-          <img src="../../assets/logo.png" alt="logo" />
+          <img src={Logo} alt="logo" />
         </Link>
         <ul className={`nav-links ${open ? "open" : ""}`}>
           <li>

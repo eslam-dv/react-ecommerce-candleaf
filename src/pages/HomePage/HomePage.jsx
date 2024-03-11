@@ -4,6 +4,8 @@ import { CircleCheckIcon } from "../../components/icons";
 import products from "../../db/products";
 import reviews from "../../db/reviews.json";
 import "./Home.css";
+import pfp from "../../assets/pfp.png";
+import mockups from "../../assets/mockups.png";
 
 export const HomePage = () => {
   const [width, setWidth] = useState(window.innerWidth);
@@ -106,7 +108,7 @@ export const HomePage = () => {
               <button className="btn">Learn more</button>
             </div>
             <div className="Benefits-mockup">
-              <img src="/src/assets/mockups.png" alt="" />
+              <img src={mockups} alt="candles" />
             </div>
           </div>
         </div>
@@ -122,7 +124,7 @@ export const HomePage = () => {
             {reviews.map((review, index) => (
               <div key={index} className="review">
                 <div className="pfp">
-                  <img src={review.picture} alt={review.name} />
+                  <img src={pfp} alt={review.name} />
                 </div>
                 <div>{review.stars}</div>
                 <p className="poppins md">&ldquo;{review.quote}&rdquo;</p>

@@ -2,49 +2,49 @@
   {
     "id": 1,
     "title": "Spiced Mint",
-    "image": "../assets/products/image 1.png",
+    "image": "https://res.cloudinary.com/dc8zhq4wz/image/upload/v1710155681/candleaf/Spiced-Mint.png",
     "price": 9.99
   },
   {
     "id": 2,
     "title": "Sweet Strawberry",
-    "image": "../assets/products/image 2.png",
+    "image": "https://res.cloudinary.com/dc8zhq4wz/image/upload/v1710155681/candleaf/Sweet-Strawberry.png",
     "price": 14.99
   },
   {
     "id": 3,
     "title": "Cool Blueberries",
-    "image": "../assets/products/image 3.png",
+    "image": "https://res.cloudinary.com/dc8zhq4wz/image/upload/v1710155682/candleaf/Cool-Blueberries.png",
     "price": 10.99
   },
   {
     "id": 4,
     "title": "Juicy Lemon",
-    "image": "../assets/products/image 4.png",
+    "image": "https://res.cloudinary.com/dc8zhq4wz/image/upload/v1710155682/candleaf/Juicy-Lemon.png",
     "price": 12.99
   },
   {
     "id": 5,
     "title": "Sugared Orange",
-    "image": "../assets/products/image 5.png",
+    "image": "https://res.cloudinary.com/dc8zhq4wz/image/upload/v1710155682/candleaf/Sugared-Orange.png",
     "price": 13.99
   },
   {
     "id": 6,
     "title": "Fragrant Cinamon",
-    "image": "../assets/products/image 6.png",
+    "image": "https://res.cloudinary.com/dc8zhq4wz/image/upload/v1710155682/candleaf/Fragrant-Cinamon.png",
     "price": 18.99
   },
   {
     "id": 7,
     "title": "Summer Cherries",
-    "image": "../assets/products/image 7.png",
+    "image": "https://res.cloudinary.com/dc8zhq4wz/image/upload/v1710155683/candleaf/Summer-Cherries.png",
     "price": 16.99
   },
   {
     "id": 8,
     "title": "Clean Lavander",
-    "image": "../assets/products/image 8.png",
+    "image": "https://res.cloudinary.com/dc8zhq4wz/image/upload/v1710155683/candleaf/Clean-Lavander.png",
     "price": 17.99
   }
 ]

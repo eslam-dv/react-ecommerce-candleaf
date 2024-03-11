@@ -1,19 +1,16 @@
 [
   {
     "name": "Luisa",
-    "picture": "/src/assets/pfp.png",
     "quote": "I love it! No mora air fresheners",
     "stars": 5
   },
   {
     "name": "Edoardo",
-    "picture": "/src/assets/pfp.png",
     "quote": "Recomended for everyone",
     "stars": 5
   },
   {
     "name": "Mart",
-    "picture": "/src/assets/pfp.png",
     "quote": "Looks very natural, the smell is awesome",
     "stars": 4
   }

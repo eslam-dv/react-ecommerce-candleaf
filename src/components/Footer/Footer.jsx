@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 
 import "./footer.css";
+import footer from "../../assets/logo-footer.png";
 
 const Footer = () => {
   return (
@@ -10,10 +11,7 @@ const Footer = () => {
         <div className="footer">
           <div className="footer-left">
             <div>
-              <img
-                src="../../assets/logo-footer.png"
-                alt="candleaf white logo"
-              />
+              <img src={footer} alt="candleaf white logo" />
             </div>
             <p>Your natural candle made for your home and your wellness.</p>
           </div>

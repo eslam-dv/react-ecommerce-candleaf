@@ -1,4 +1,5 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+// for githubpages normally use BrowserRouter
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 
 import { HomePage } from "./pages/HomePage/HomePage";
 import { ProductPage } from "./pages/ProductPage/ProductPage";
