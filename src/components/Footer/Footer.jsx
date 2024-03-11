@@ -11,7 +11,7 @@ const Footer = () => {
           <div className="footer-left">
             <div>
               <img
-                src="/src/assets/logo-footer.png"
+                src="../../assets/logo-footer.png"
                 alt="candleaf white logo"
               />
             </div>

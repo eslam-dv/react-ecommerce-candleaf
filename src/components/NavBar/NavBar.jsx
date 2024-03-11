@@ -26,7 +26,7 @@ const NavBar = () => {
           {open ? <CloseIcon /> : <BurgerMenuIcon />}
         </div>
         <Link to="/" className="nav-logo">
-          <img src="/src/assets/logo.png" alt="logo" />
+          <img src="../../assets/logo.png" alt="logo" />
         </Link>
         <ul className={`nav-links ${open ? "open" : ""}`}>
           <li>
