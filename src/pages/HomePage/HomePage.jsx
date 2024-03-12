@@ -2,10 +2,11 @@ import { useState } from "react";
 import { Product } from "../../components/Product/Product";
 import { CircleCheckIcon } from "../../components/icons";
 import products from "../../db/products";
-import reviews from "../../db/reviews.json";
+// import reviews from "../../db/reviews.json";
 import "./Home.css";
-import pfp from "../../assets/pfp.png";
+// import pfp from "../../assets/pfp.png";
 import mockups from "../../assets/mockups.png";
+import { Carousel } from "./Carousel/Carousel";
 
 export const HomePage = () => {
   const [width, setWidth] = useState(window.innerWidth);
@@ -120,18 +121,7 @@ export const HomePage = () => {
         <div className="container">
           <h1 className="section-title">Testimonials</h1>
           <p className="section-text">Some quotes from our happy customers</p>
-          <div className="testimonials-container">
-            {reviews.map((review, index) => (
-              <div key={index} className="review">
-                <div className="pfp">
-                  <img src={pfp} alt={review.name} />
-                </div>
-                <div>{review.stars}</div>
-                <p className="poppins md">&ldquo;{review.quote}&rdquo;</p>
-                <span className="roboto">{review.name}</span>
-              </div>
-            ))}
-          </div>
+          <Carousel />
         </div>
       </section>
       {/* Testimonials Section */}
