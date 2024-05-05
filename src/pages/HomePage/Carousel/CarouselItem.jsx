@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import { StarFillIcon, StarIcon } from "../../../components/icons";
 
 import pfp from "../../../assets/pfp.png";
 
@@ -13,12 +14,12 @@ export const CarouselItem = ({ item }) => {
       <div className="rating">
         {[...Array(rating)].map((e, i) => (
           <span className="filled-star" key={i}>
-            &#9733;
+            <StarFillIcon />
           </span>
         ))}
         {[...Array(5 - rating)].map((e, i) => (
           <span className="empty-star" key={i}>
-            &#9734;
+            <StarIcon />
           </span>
         ))}
       </div>

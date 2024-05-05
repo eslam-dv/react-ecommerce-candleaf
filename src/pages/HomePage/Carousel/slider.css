@@ -24,13 +24,10 @@
 }
 
 .carousel-item .rating {
-  font-size: 1.5em;
+  font-size: 1em;
 }
 
-.carousel-item .rating .filled-star {
-  color: var(--primary);
-}
-
+.carousel-item .rating .filled-star,
 .carousel-item .rating .empty-star {
   color: var(--primary);
 }
