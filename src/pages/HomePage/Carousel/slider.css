@@ -23,13 +23,10 @@
   width: 100%;
 }
 
-.carousel-item .rating {
-  font-size: 1em;
-}
-
-.carousel-item .rating .filled-star,
-.carousel-item .rating .empty-star {
+.carousel-item .rating .filled-star svg,
+.carousel-item .rating .empty-star svg {
   color: var(--primary);
+  font-size: 1.125rem;
 }
 
 .carousel-item p {
